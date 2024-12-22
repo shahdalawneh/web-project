@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2b2d42, #8d99ae);
+    color: #edf2f4;
+
+}
+.header .header-2{
+    background: none;
+
+}
+.header .header-2 .navbar{
+    text-align: center;
+    width: 100%;
+
+    z-index: 1;
+    background:linear-gradient(135deg, #00001a, #000000,#00004d, #000000,#000000);
+    padding: .1rem;
+
+
+}
+.header .header-2 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: 'Arial Black',sans-serif;
+    text-decoration: none;
+
+}
+.header .header-2 .navbar a:hover{
+    border-radius: 30px;
+    color: white;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #00001a, #ff1ab3,#00004d, #38004d,#ff33bb,#00001a,#ff1ab3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.header .header-2.active{
+    position: relative;
+    top:0;left: 0;right: 0;
+    z-index: 1000;
+    transform: scale(0.95);
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5);
+}
+.featured_container {
+    margin-top: -100px ;
+    max-width: 70%;
+    position: relative;
+   right:-200px;
+
+}
+
+h1{
+    margin-top: 20px;
+    transform: translateY(-8px);
+    margin-left: 550px;
+
+
+}
+
+.swiper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+.featured_card {
+    background-color: #1d3557;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.featured_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.featured_img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.05px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.featured_title {
+    font-size: .8rem;
+    font-family: Arial black, sans-serif;
+    color: #edf2f4;
+
+}
+
+.featured_prices span {
+    display: block;
+    margin: 1px 0;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a8dadc;
+}
+
+.featured_actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 3px;
+    transition: transform 0.2s;
+}
+
+.featured_actions button:hover {
+    transform: scale(1.2);
+}
+
+.featured_actions img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #edf2f4;
+    width: 30px;
+    height: 30px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transform: scale(1.2);
+}
+
+.swiper-pagination-bullet {
+    background-color: #edf2f4;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #457b9d;
+}
+
+
+.book {
+    width: 100px;
+    height: auto;
+    padding: 8px;
+    margin: 8px;
+    background-color: #1a2b44;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book .first, .book .second {
+    margin-top: 5px;
+}
+
+.featured_actions button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.learn-more-container {
+    text-align: center;
+    position: relative;
+    top: -50px;
+    right :-300px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button {
+    background-color: #457b9d;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+
+
+   
+
+
+
+}
+
+.learn-more-button:hover {
+    background-color: #a8dadc;
+
+}
+
+/* إضافة تأثير التمرير السلس */
+html {
+    scroll-behavior: smooth;
+}
+
+.featured-description {
+    text-align: center;
+    background-color: #1d3557;
+    color: #edf2f4;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    margin: 40px auto;
+}
+
